@@ -1,0 +1,63 @@
+.about-collections {
+  position: relative;
+  padding: 120px 48px;
+  overflow: hidden;
+
+  background: #fbf1e3;
+}
+
+.about-collections::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-3deg);
+
+  width: 120%;
+  height: 120%;
+
+  background: url("/background.png") no-repeat center;
+  background-size: cover;
+
+  z-index: 0;
+}
+
+.about-collections__container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.about-collections__card {
+  padding: 60px 40px;
+
+  background: white;
+  border-radius: 16px;
+
+  box-shadow: 0 20px 50px rgba(20, 48, 138, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-collections__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(20, 48, 138, 0.12);
+}
+
+.about-collections__card h2 {
+  color: #14308a;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.about-collections__card p {
+  color: #14308a;
+  opacity: 0.8;
+}
