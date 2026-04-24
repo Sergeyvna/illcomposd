@@ -19,17 +19,17 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${show ? "navbar--visible" : ""}`}>
-
-        <div className="navbar__left">
-            <a href="/about">About</a>
+        
+        <div className="navbar__right">
+            <Link to="/collections">Collections</Link>
         </div>
 
         <a href="/" className="navbar__center">
             <img src="/main_logo.png" alt="Logo" className="navbar__logo" />
         </a>
 
-        <div className="navbar__right">
-            <a href="/collections">Collections</a>
+        <div className="navbar__left">
+            <Link to="/about">About</Link>
         </div>
 
     </nav>

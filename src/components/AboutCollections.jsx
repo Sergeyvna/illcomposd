@@ -6,13 +6,13 @@ export default function AboutCollections() {
     <section className="about-collections">
       <div className="about-collections__container">
 
-        <a href="/collections" className="about-collections__item">
+        <Link to="/collections" className="about-collections__item">
           <img src="/collections.png" alt="Collections" />
-        </a>
+        </Link>
 
-        <a href="/about" className="about-collections__item">
+        <Link to="/about" className="about-collections__item">
           <img src="/aboutme.png" alt="About Me" />
-        </a>
+        </Link>
 
       </div>
     </section>
