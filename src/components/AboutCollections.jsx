@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./AboutCollections.css";
 
 export default function AboutCollections() {
@@ -5,15 +6,13 @@ export default function AboutCollections() {
     <section className="about-collections">
       <div className="about-collections__container">
 
-        <div className="about-collections__card">
-          <h2>About</h2>
-          <p>Learn more about me, my background and creative process.</p>
-        </div>
+        <a href="/collections" className="about-collections__item">
+          <img src="/collections.png" alt="Collections" />
+        </a>
 
-        <div className="about-collections__card">
-          <h2>Collections</h2>
-          <p>Explore my curated work and video collections.</p>
-        </div>
+        <a href="/about" className="about-collections__item">
+          <img src="/aboutme.png" alt="About Me" />
+        </a>
 
       </div>
     </section>

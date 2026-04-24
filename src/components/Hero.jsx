@@ -4,7 +4,6 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero__bg-main"></div>
 
       <div className="hero__left">
         <img 
@@ -17,7 +16,6 @@ export default function Hero() {
       <div className="hero__right">
         <video className="hero__video" src="/video1.mp4" autoPlay muted loop playsInline />
         <video className="hero__video" src="/video2.mp4" autoPlay muted loop playsInline />
-        <video className="hero__video" src="/video3.mp4" autoPlay muted loop playsInline />
         <video className="hero__video" src="/video3.mp4" autoPlay muted loop playsInline />
       </div>
     </section>

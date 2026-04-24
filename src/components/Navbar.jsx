@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -18,11 +19,19 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${show ? "navbar--visible" : ""}`}>
-      <img src="/logo.png" alt="Logo" className="navbar__logo" />
-      <div className="navbar__links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-      </div>
+
+        <div className="navbar__left">
+            <a href="/about">About</a>
+        </div>
+
+        <a href="/" className="navbar__center">
+            <img src="/main_logo.png" alt="Logo" className="navbar__logo" />
+        </a>
+
+        <div className="navbar__right">
+            <a href="/collections">Collections</a>
+        </div>
+
     </nav>
   );
 }
