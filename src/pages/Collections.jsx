@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import "./Collections.css";
+import Navbar from "../components/Navbar";
 
 export default function About() {
   const carItems = [
@@ -82,22 +83,20 @@ export default function About() {
   ];
 
     const photoshotItems = [
-    { type: "image", src: "/collections/culinary/culinary1.jpg", size: "culinary-item-1" },
-    { type: "image", src: "/collections/culinary/culinary2.jpg", size: "culinary-item-2" },
-    { type: "image", src: "/collections/culinary/culinary3.jpg", size: "culinary-item-3" },
-    { type: "image", src: "/collections/culinary/culinary4.jpg", size: "culinary-item-4" },
+    { type: "image", src: "/collections/photoshot/ph1.jpg", size: "photoshot-item-1" },
+    { type: "image", src: "/collections/photoshot/ph2.jpg", size: "photoshot-item-2" },
+    { type: "image", src: "/collections/photoshot/ph3.jpg", size: "photoshot-item-3" },
+    { type: "image", src: "/collections/photoshot/ph4.jpg", size: "photoshot-item-4" },
 
-    { type: "text", text: "culinary imaging", size: "culinary-text-1" },
+    { type: "text", text: "photoshot samples", size: "photoshot-text-1" },
   ];
 
 
-  
-
   return (
+    
     <section className="collections-page">
-      <Link to="/" className="collections__logo-link">
-        <img src="/aboutme_logo.png" alt="Home" className="collections__logo" />
-      </Link>
+
+      <Navbar />
 
       <div className="collections__container">
         {carItems.map((item, index) =>
@@ -141,6 +140,26 @@ export default function About() {
 
       <div className="collections__container3">
         {culinaryItems.map((item, index) =>
+          item.type === "image" ? (
+            <div
+              key={index}
+              className={`collections__item ${item.size}`}
+            >
+              <img src={item.src} alt="" />
+            </div>
+          ) : (
+            <div
+              key={index}
+              className={`collections__text-card ${item.size}`}
+            >
+              {item.text}
+            </div>
+          )
+        )}
+      </div>
+
+      <div className="collections__container4">
+        {photoshotItems.map((item, index) =>
           item.type === "image" ? (
             <div
               key={index}

@@ -54,10 +54,11 @@
 
 .navbar a,
 .navbar a:visited {
-  color: #18099e;
+  color: #064485;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
+  font-family: "FuturaCustom";
 }
 
 

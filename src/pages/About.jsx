@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import "./About.css";
+import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
     <section className="about-page">
 
-      <Link to="/" className="about__logo-link">
-        <img src="/aboutme_logo.png" alt="Home" className="about__logo" />
-      </Link>
+      <Navbar />
+
       <div className="about__container">
 
 
