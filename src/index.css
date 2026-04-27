@@ -22,3 +22,8 @@ body {
   background: var(--cream);
   color: var(--text);
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

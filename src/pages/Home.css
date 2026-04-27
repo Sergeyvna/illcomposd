@@ -5,3 +5,7 @@
   background-repeat: no-repeat;
   min-height: 200vh;
 }
+
+.home-bg .footer {
+  margin-top: 200px;
+}
