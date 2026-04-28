@@ -9,3 +9,16 @@
 .home-bg .footer {
   margin-top: 200px;
 }
+
+/* MOBILE BACKGROUND */
+@media (max-width: 768px) {
+  .home-bg {
+    background-image: url("/mobile-background.png");
+
+    /* adjust how it fits */
+    background-size: cover; /* or try 100% auto */
+    background-position: top center;
+
+    min-height: 120vh;
+  }
+}

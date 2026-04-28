@@ -6,7 +6,7 @@ export default function Footer() {
       <img src="/footer.png" alt="Footer" className="footer__image" />
 
         <div className="footer__contact">
-            <a href="mailto:youremail@example.com">
+            <a href="mailto:maicahlou@gmail.com">
             <img src="/email.svg" alt="" />
             maicahlou@gmail.com
             </a>

@@ -41,11 +41,15 @@
   }
 
   .about-collections__container {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: 1fr 1fr; /* side by side */
+    gap: 16px;
+    justify-items: center; /* centers each item */
+    align-items: center;
   }
 
   .about-collections__item img {
-    height: 70%;
+    width: 100%;
+    height: auto; /* keep proportions */
+    max-width: 140px; /* control size */
   }
 }
